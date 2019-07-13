@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+ <env name="UGV_SDK_LIB_PATH" value="$(find load_pcd_map)/MapDataEngine/lib" />
+  <node pkg="load_pcd_map" name="load_pcd_map_node" type="load_pcd_map_node" output="screen">
+ </node>
+  <node pkg="load_pcd_map" name="map_engine_node" type="map_engine_node" output="screen">
+ </node>
+</launch>
+
